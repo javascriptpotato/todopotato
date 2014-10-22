@@ -12,7 +12,7 @@ function addText() {
     node.appendChild(textnode);
     document.getElementById('do').appendChild(node);
 
-    if (checkdone.checked === true) {
+    if (document.getElementById('checkatri').checked === true) {
     	alert("It's a start!");
     }
 
