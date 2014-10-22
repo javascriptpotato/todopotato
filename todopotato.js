@@ -5,9 +5,16 @@ function addText() {
 
     var checkdone = document.createElement('input');
     checkdone.setAttribute("type","checkbox");
+    var checkatri = "checkatri";
+    checkdone.id = checkatri;
+
     node.appendChild(checkdone);
     node.appendChild(textnode);
     document.getElementById('do').appendChild(node);
+
+    if (checkdone.checked) {
+    	alert("It's a start!");
+    }
 
 }
 
