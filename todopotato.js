@@ -12,9 +12,10 @@ function addText() {
     node.appendChild(textnode);
     document.getElementById('do').appendChild(node);
 
-    if (document.getElementById('checkatri').checked === true) {
-    	alert("It's a start!");
-    }
+    checkdone.addEventListener('click',function(event) {
+        node.remove(node.checked);
+
+    });
 
 }
 
